@@ -3,7 +3,7 @@ const path = require('path');
 
 module.exports = {
   mode: 'production',
-  entry: './src/modules/ocr/lib/ocr.ts',
+  entry: './src/index.ts',
   target: 'node',
   externals: [nodeExternals()],
 
