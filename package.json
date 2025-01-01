@@ -1,0 +1,44 @@
+{
+  "name": "rcmgt-bff",
+  "version": "1.0.0",
+  "description": "",
+  "types": "dist/types",
+  "main": "dist/index.js",
+  "scripts": {
+    "test": "jest",
+    "dev": "NODE_ENV=development nodemon ./src/index.ts",
+    "build": "npx webpack -c ./webpack.config.js",
+    "start": "NODE_ENV=production node ./dist/index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@types/node": "^22.10.3",
+    "bcrypt": "^5.1.1",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "jsonwebtoken": "^9.0.2",
+    "mongoose": "^8.9.3",
+    "openai": "^4.77.0",
+    "regenerator-runtime": "^0.14.1",
+    "tesseract.js": "^5.1.1",
+    "winston": "^3.17.0"
+  },
+  "devDependencies": {
+    "@types/bcrypt": "^5.0.2",
+    "@types/cors": "^2.8.17",
+    "@types/express": "^5.0.0",
+    "@types/jsonwebtoken": "^9.0.7",
+    "@types/regenerator-runtime": "^0.13.8",
+    "nodemon": "^3.1.9",
+    "ts-loader": "^9.5.1",
+    "ts-node": "^10.9.2",
+    "tsconfig-paths": "^4.2.0",
+    "typescript": "^5.7.2",
+    "webpack": "^5.97.1",
+    "webpack-cli": "^6.0.1",
+    "webpack-node-externals": "^3.0.0"
+  }
+}
