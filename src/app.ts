@@ -3,7 +3,7 @@ import cors from 'cors';
 
 import { errorHandler } from '@/common/middlewares';
 import AuthRoute from '@/modules/authentication';
-import FileRoute from '@/modules/file-management';
+import ReceiptsRoute from '@/modules/receipts';
 
 const app = express();
 
@@ -14,7 +14,7 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 
 app.use('/auth', AuthRoute);
-app.use('/files', FileRoute);
+app.use('/receipts', ReceiptsRoute);
 
 app.use(errorHandler);
 
